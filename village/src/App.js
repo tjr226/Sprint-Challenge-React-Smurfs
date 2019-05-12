@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Axios from 'axios';
-import { NavLink, Route } from 'react-router-dom';
+import { NavLink, Route, Link } from 'react-router-dom';
 
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
@@ -38,12 +38,14 @@ class App extends Component {
     return (
       <div className="App">
         <nav>
-          <h1>Smurfs</h1>
+          <h1>Smurf Village</h1>
           <div className="nav-links">
-            <NavLink exact to="/">Home</NavLink>
-            <NavLink to="/SmurfForm">Add Smurf</NavLink>
+            <NavLink className="nav-link" exact to="/">Smurf List</NavLink>
+            <NavLink className="nav-link" to="/SmurfForm">Add Smurf</NavLink>
           </div>
         </nav>
+        {/* <Link to={"/"} >Smurf List</Link> */}
+        {/* <Link to={"/"} >Add Smurf</Link> */}
         <Route exact path="/" render={(props) => <Smurfs {...props} smurfs={this.state.smurfs} /> } />
         <Route path="/SmurfForm" render={(props) => <SmurfForm {...props} postSmurf={this.postSmurf} /> } />
       </div>
