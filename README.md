@@ -28,18 +28,33 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+- [ x ] Explain the differences between `client-side routing` and `server-side routing`.
 
+Client side routing loads all the component web pages of a website onto the users local computer. When the user clicks on a link, the address in the browser changes, and the display changes, but the webpage is not reloaded from the server.
+
+Server-side routing is when each individual webpage is loaded new from the server, each time the user switches to a new page.
+
+- [ x ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+Create - POST
+
+Read - GET
+
+Update - PUT
+
+Delete - DELETE
+
+- [ x ] Mention three tools we can use to make AJAX requests.
+
+Libraries you can use to make AJAX requests are Axios, JQuery, Fetch, and many others.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ x ] Create a forked copy of this project.
+- [ x ] Add PM as collaborator on Github.
+- [ x ] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
