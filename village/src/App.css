@@ -15,3 +15,8 @@
 .SmurfForm {
   padding-top: 20px;
 }
+
+.link-to-smurf {
+  text-decoration: none;
+  color: black;
+}
